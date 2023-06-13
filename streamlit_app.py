@@ -57,7 +57,7 @@ streamlit.dataframe(my_data_rows)
 
 #add a second text box
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-fruit_choice = streamlit.text_input('What fruit would you like to add?','Jackfruit')
+fruit_choice = streamlit.text_input('What fruit would you like to add?','add_my_fruit')
 streamlit.write('Thanks for adding ', add_my_fruit)
 
 
