@@ -37,3 +37,6 @@ streamlit.write('The user entered ', fruit_choice)
 # output it to the screen as table
 streamlit.dataframe(fruityvice_normalized)
 
+
+#requirements.txt
+import snowflake.connector
