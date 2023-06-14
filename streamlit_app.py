@@ -58,7 +58,7 @@ streamlit.write('The user entered ', fruit_choice)
 #streamlit.dataframe(fruityvice_normalized)
 
 #don't run anything past herewhile we troubleshoot
-streamlit.stop()
+#streamlit.stop()
 
 #requirements.txt
 #import snowflake.connector
@@ -87,6 +87,8 @@ if streamlit.button('Get Fruit Load List'):
   my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
   my_data_rows = get_fruit_load_list()
   streamlit.dataframe(my_data_rows)
+  
+streamlit.stop()
 
 #add a second text box
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
