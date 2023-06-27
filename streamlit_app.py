@@ -109,3 +109,9 @@ streamlit.write('Thanks for adding ', fruit_choice)
 
 #This will not work correctly
 my_cur.execute("insert into fruit_load_list values('from streamlit')")
+
+
+#import streamlit
+#import snowflake.connector
+#import pandas
+
